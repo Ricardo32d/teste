@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("blur").style.filter = "blur(5px)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("blur").style.filter = "blur(0px)";
+}
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+<style type="text/css">
+h1 {
+	font-size: 24px;
+	color: #FFF;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: Verdana, Geneva, sans-serif;
+}
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+}
+h2 {
+	font-size: 20px;
+	color: #FFF;
+}
+</style>
+</head>
+
+<body onLoad="MM_preloadImages('imagens/drugsrollover.jpg','imagens/sexualidaderollover.jpg','imagens/bullyingrollover.jpg','imagens/familiarollover.jpg')">
+<img src="imagens/LOGO TIPO TM rodrigosimoes.png" width="100" height="100" id="logo">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <div id="dropdown">
+  <a href="#" id="dropbtn">Tópicos</a>
+    <div id="caixa"><a href="Sexualidade.html">Sexualidade</a>
+    <a href="drogas.html">Drogas</a><a href="bullying.html">Bullying</a><a href="familia.html">Problemas Familiares</a></div>
+</div>
+  <a href="http://cadernetavirtual.nunobarros.net/" target="_blank">A escola</a>
+  <a href="Sobre.html">Sobre</a>
+</div>
+
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="ope">&#9776; open</span>
+</div>
+  <div align="center"></div>
+  <blockquote>
+  <div id="blur">
+    <h1 align="center"><img src="imagens/Custody4.png" width="877" height="556"></h1>
+    <h1>&nbsp;</h1>
+    <h1>Problemas Familiares</h1>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>Os adolescentes são muito influenciados pelas suas famílias ainda que, por vezes, estes laços possam ser abalados. Estudos feitos nas últimas décadas têm mostrado, de forma consistente, que existe menos conflito entre os adolescentes e suas famílias do que se pensava. Estes estudos referem que o conflito está presente em apenas 15 % a 25 % das famílias. A ocorrência destes conflitos está relacionada sobretudo com as rotinas familiares, o estabelecimento de horas de entrada em casa, namoros, notas escolares, aparência física e hábitos alimentares.<br>
+    </p>
+    <p>Os pais continuam, hoje, a influenciar os seus filhos adolescentes não só nas suas crenças mas também ao nível do seu comportamento. Contudo, mães e pais influenciam os adolescentes de maneira diferente. Parecem existir diferenças consideráveis entre o comportamento e o papel das mães e dos pais nas relações familiares com os filhos adolescentes. Assim, os pais tendem a encorajar o desenvolvimento intelectual e frequentemente envolvem-se em actividades de resolução de problemas e discussão dentro da família. Como consequência, quer rapazes quer raparigas discutem ideias com os pais. O envolvimento dos adolescentes com as mães é mais complexo. Mães e adolescentes interagem no que diz respeito por exemplo às responsabilidades nas tarefas domésticas, trabalhos escolares, disciplina dentro e fora de casa e actividades de lazer. Estas áreas podem resultar em maiores conflitos entre as mães e os seus filhos adolescentes contudo, tendem a criar maior proximidade entre mães/filhos de que entre pais/filhos.</p>
+    <p>Os jovens nesta fase de transmutação fisiológica e emocional despertam dentro deles preocupações e receios que se não houver um acompanhamento familiar e tiver complemento informativo e activo a nível do Ensino Escolar, provocará distúrbios de ordem psicológica e comportamental na personalidade do indivíduo tornando-se fortemente marcante no futuro!</p>
+</div>
+</blockquote>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("blur").style.filter = "blur(5px)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("blur").style.filter = "blur(0px)";
+}
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+<style type="text/css">
+h1 {
+	font-size: 24px;
+	color: #FFF;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: Verdana, Geneva, sans-serif;
+}
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+}
+h2 {
+	font-size: 20px;
+	color: #FFF;
+}
+</style>
+</head>
+
+<body onLoad="MM_preloadImages('imagens/drugsrollover.jpg','imagens/sexualidaderollover.jpg','imagens/bullyingrollover.jpg','imagens/familiarollover.jpg')">
+<img src="imagens/LOGO TIPO TM rodrigosimoes.png" width="100" height="100" id="logo">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <div id="dropdown">
+  <a href="#" id="dropbtn">Tópicos</a>
+    <div id="caixa"><a href="Sexualidade.html">Sexualidade</a>
+    <a href="drogas.html">Drogas</a><a href="bullying.html">Bullying</a><a href="familia.html">Problemas Familiares</a></div>
+  </div>
+  <a href="http://cadernetavirtual.nunobarros.net/" target="_blank">A escola</a>
+  <a href="Sobre.html">Sobre</a>
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="ope">&#9776; open</span>
+</div>
+  <div align="center"></div>
+  <blockquote>
+  <div id="blur">
+    <h1>&nbsp;</h1>
+    <h1>&nbsp;</h1>
+    <h1><img src="imagens/cocaine.jpg"></h1>
+    <h1>Consumo de drogas na Adolescência</h1>
+    <p>&nbsp;</p>
+    <p>Na adolescência, os jovens estão mais vulneráveis e são muito facilmente  seduzidos pelas drogas. Encarregados de educação e educadores devem investir na prevenção,  mantendo sempre um diálogo aberto e mostrando os efeitos e perigos das drogas.</p>
+    <p>O termo droga aplica-se a todas as substâncias que possam:</p>
+    <p>– Produzir alterações no equilíbrio do organismo ao serem   introduzidas por diversas vias, como inalação, ingestão, injecção, etc. ;<br>
+      – Provocar no indivíduo dependência física, psíquica ou ambas;<br>
+      – Conduzir o organismo à tolerância aos efeitos que produz;<br>
+      – Levar à síndroma de abstinência, quando deixam de ser consumidas.</p>
+    <p>Quando um jovem experimenta uma droga, geralmente fá-lo por pressão do grupo de amigos ou por curiosidade.<br>
+      O abuso das drogas depende dos mais variados factores, como o estado   psicológico, as condições sócio-económicas (desemprego), e a solidão.</p>
+    <p>&nbsp;</p>
+    <h2>Sinais de alerta</h2>
+    <p><strong>Se você está preocupado que o seu adolescente utilize de drogas ou álcool, olhe para estes sinais de alerta:</strong></p>
+    <ul>
+      <li>Outros membros da família sabem do abuso de substâncias;</li>
+      <li>Faltar às aulas com muita frequência;</li>
+      <li>Mudança para um grupo de pessoas diferente;</li>
+      <li>Parar as actividades extracurriculares que foram importantes para o adolescente;</li>
+      <li>Dificuldades de ordem jurídica;</li>
+      <li>Posse de identificação falsa;</li>
+      <li>Fonte desconhecida de renda;</li>
+      <li>Modificações   físicas, tais como  fala arrastada, perda de   coordenação motora, olhos vermelhos, pupilas dilatadas ou perda rápida   de peso;    </li>
+    </ul>
+    <p>&nbsp;</p>
+</div>
+  </blockquote>
+</body>
+</html>
